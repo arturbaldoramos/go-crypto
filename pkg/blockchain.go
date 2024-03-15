@@ -1,6 +1,9 @@
 package blockchain
 
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 type Block struct {
 	nonce        int
@@ -15,4 +18,11 @@ func NewBlock(nonce int, previousHash string) *Block {
 	b.nonce = nonce
 	b.previousHash = previousHash
 	return b
+}
+
+func (b *Block) Print() {
+	fmt.Printf("timestamp        	  %d/n", b.timestamp)
+	fmt.Printf("nonce	        	  %d/n", b.nonce)
+	fmt.Printf("previus_hash 		  %d/n", b.previousHash)
+	fmt.Printf("transactions	          %d/n", b.transactions)
 }
