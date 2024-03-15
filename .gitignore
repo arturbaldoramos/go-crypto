@@ -1,8 +1,11 @@
-#ignoring IntelliJ files
+#ignore IntelliJ files
 .idea
 
-#ignoring enviroment files
+#ignore enviroment files
 .env
 
 #ignore auto generete folder
 bin
+
+#ignore tmp folder
+tmp
